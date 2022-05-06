@@ -1,0 +1,20 @@
+.select{
+    width: 40%;
+  margin-top: 50px;
+  height: 50px;
+  font-size: 28px;
+  background-color: aqua;
+  box-shadow: 2px 2px 8px 4px aqua;
+  border: 2px solid white;
+}
+.posts__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.posts__item{
+    padding: 15px;
+    &:nth-child(2n - 1){
+        background-color: rgb(192, 190, 190);
+    }
+}

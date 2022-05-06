@@ -1,37 +1,26 @@
-.nav__link{
-    text-decoration: none;
-    font-size: 28px;
-    border: 1px solid white;
-    &--active{
-        background-color: aqua;
-        text-decoration: underline;
-        color: #282c34;
-    }
-}
-header ul{
+footer ul{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     }
-    .header__container{
+    footer{
         background-color: #282c34;
         display: flex;
         align-items: center;
-        
     }
-    header ul a{
+    footer ul a{
         color: white;
         font-size: 24px;
         text-decoration: none;
         padding: 10px 20px;
+       
     }
- .logo{
+    .logo{
         font-size: 48px;
         color: wheat;
         flex-grow: 1;
         display: block;
     margin-left: 15px;
-    text-decoration: none;
     margin: 15px;
     }

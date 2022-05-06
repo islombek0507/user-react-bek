@@ -3,8 +3,8 @@ import './Header.scss'
 export function Header() {
     return(
         <header>
-     <div className="container">
-         <Link to='/'>sss</Link>
+     <div className="container header__container">
+         <Link className="logo" to='/'>UserLogo</Link>
 
          <nav className="nav">
              <ul className="nav__list">

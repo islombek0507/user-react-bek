@@ -1,0 +1,31 @@
+.single{
+display: flex;
+padding-top: 50px;
+}
+.single__img{
+width: 40%;
+height: 200px;
+object-fit: contain;
+
+}
+.single__name{
+font-size: 32px;
+}
+.single__mail{
+    font-size: 26px;
+}
+.single__user{
+    font-size: 26px;
+}
+.single__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.single__item{
+padding: 15px;
+    &:nth-child(2n - 1){
+        background-color: rgb(192, 190, 190);
+    }
+}

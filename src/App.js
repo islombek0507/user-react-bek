@@ -6,6 +6,7 @@ import { Home } from './pages/Home';
 import { Users } from './pages/Users';
 import { Posts } from './pages/Posts';
 import { UserSinge } from './pages/UserSingles';
+import { Footer } from './components/Footer';
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,7 @@ function App() {
      <Route path = '/user/:id' element = {<UserSinge />} />
      <Route path = '/posts' element = {<Posts />} />
    </Routes>
-    
+    <Footer />
     </div>
   );
 }

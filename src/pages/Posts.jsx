@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-
+import './Posts.scss'
 export function Posts() {
 const [posts, setPosts] = useState([])
 const [users, setUsers] = useState([])
@@ -29,19 +29,19 @@ const handleChangeUser = (evt) => setUserId(evt.target.value)
     return(
         <div className="container">
 
-<select onChange={handleChangeUser}>
-    <option value="all">All</option>
+<select className="select" onChange={handleChangeUser}>
+    <option  value="all">All</option>
     {users.map(user => (
         <option key={user.id} value={user.id}>{user.name}</option>
     ))}
 </select>
 
             <h1>Posts</h1>
-            {posts.length > 0 && <ul>
+            {posts.length > 0 && <ul className="posts__list">
                 {posts.map(post => (
-                    <li key={post.id}>
-                        <h4>{post.title}</h4>
-                        <p>{post.body}</p>
+                    <li className="posts__item" key={post.id}>
+                        <h4 className="posts__title">{post.title}</h4>
+                        <p className="posts__text">{post.body}</p>
                     </li>
                 ))}
             </ul> }
