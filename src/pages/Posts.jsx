@@ -9,6 +9,7 @@ useEffect(() => {
     fetch(process.env.REACT_APP_URL + '/posts')
     .then(res => res.json())
     .then(data => {
+        setPosts(data)
         setAllPosts(data)
     } )
 
@@ -17,18 +18,18 @@ useEffect(() => {
     .then(res=>res.json())
     .then(data=>setUsers(data))
 }, [])
-
 useEffect(() => {
     if(userId === 'all'){
         return setPosts(allPosts)
     }
     const filterPosts = allPosts.filter(post => post.userId === userId - 0)
     setPosts(filterPosts)
+    // eslint-disable-next-line
 }, [userId]);
 const handleChangeUser = (evt) => setUserId(evt.target.value)
     return(
         <div className="container">
-
+ 
 <select className="select" onChange={handleChangeUser}>
     <option  value="all">All</option>
     {users.map(user => (
